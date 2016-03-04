@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
 var app = express()
 
-app.get('/', function(req,res){
+app.post('/', function(req,res){
   res.send('Welcome Home')
 })
 
