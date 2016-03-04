@@ -3,15 +3,15 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose')
 var app = express()
 
-app.delete('/', function(req,res){
+app.patch ('/', function(req,res){
   res.send('Welcome Home')
 })
 
-app.get('/about', function(req,res){
+app.delete('/about', function(req,res){
   res.send('About Page')
 })
 
-app.get('/contact', function(req,res){
+app.post('/contact', function(req,res){
   res.send("Contact page here.")
 })
 
